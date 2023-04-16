@@ -17,27 +17,27 @@ hero:
 features:
   - title: JavaScript
     details: 天生残疾的语言，却一统前端
-    icon: { src: './public/js.png' }
+    icon: { src: 'icon/js.png' }
     link: /docs/js/
   - title: CSS
     details: CSS 是最难的语言！常学常新
-    icon: { src: './public/css.png' }
+    icon: { src: 'icon/css.png' }
     link: /docs/css/
   - title: React
     details: 万物皆可hooks
-    icon: { src: './public/react.png' }
+    icon: { src: 'icon/react.png' }
     link: /docs/react/ 
   - title: Vue
     details: 前端界的PHP
-    icon: { src: './public/vue.png' }
+    icon: { src: 'icon/vue.png' }
     link: /docs/vue/  
   - title: Flutter
     details: Flutter凉了吗？这问题已持续五年
-    icon: { src: './public/flutter.png' }
+    icon: { src: 'icon/flutter.png' }
     link: /docs/flutter/  
   - title: Project 
     details: 用工程化方法构建和维护高质量的前端应用
-    icon: { src: './public/project.png' }
+    icon: { src: 'icon/project.png' }
     link: /docs/project/
 ---
 
