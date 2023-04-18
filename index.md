@@ -9,16 +9,16 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /docs/markdown-examples
+      link: /docs/js/index
     - theme: alt
       text: View on Github
-      link: /docs/api-examples
+      link: https://github.com/KilianShen/KilianShen.github.io
 
 features:
   - title: JavaScript
     details: 天生残疾的语言，却一统前端
     icon: { src: 'icon/js.svg' }
-    link: /docs/js/
+    link: /docs/js/built-in-objects/built-in-objects.md
   - title: CSS
     details: CSS 是最难的语言！常学常新
     icon: { src: 'icon/css.svg' }
@@ -26,18 +26,18 @@ features:
   - title: React
     details: 万物皆可hooks
     icon: { src: 'icon/react.svg' }
-    link: /docs/react/ 
+    link: /docs/react/
   - title: Vue
     details: 前端界的PHP
     icon: { src: 'icon/vue.svg' }
-    link: /docs/vue/  
+    link: /docs/vue/
   - title: Flutter
     details: Flutter凉了吗？这问题已持续五年
     icon: { src: 'icon/flutter.svg' }
-    link: /docs/flutter/  
-  - title: Project 
+    link: /docs/flutter/
+  - title: Project
     details: 用工程化方法构建和维护高质量的前端应用
     icon: { src: 'icon/project.svg' }
-    link: /docs/project/
+    link: /docs/project/npm/npm.md
 ---
 
