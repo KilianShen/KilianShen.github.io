@@ -45,11 +45,53 @@ Moment.js 的 2kB 轻量化方案，拥有同样强大的 API
 
 ## 构建工具及插件
 
-### [vite](https://cn.vitejs.dev/)
-一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）。一套构建指令，它使用 Rollup 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源。
+### [vite-plugin-eslint](https://www.npmjs.com/package/vite-plugin-eslint)
+用于VITE的ESLint插件
+#### 用法:
+``` js
+import { defineConfig } from 'vite'
+import eslint from 'vite-plugin-eslint'
+export default defineConfig({
+  plugins: [
+       eslintPlugin({
+        include: ['src/**/*.ts', 'src/*.ts', 'src/**/*.tsx', 'src/*.tsx'],
+      }),
+    ],
+})
+```
 
 ### [vite-plugin-zip-pack](https://www.npmjs.com/package/vite-plugin-zip-pack)
 可用于vite打包后自动压缩打包文件成zip。
+#### 用法:
+此处引入vite运行时环境变量控制不同环境下打包配置。
+
+::: code-group
+
+``` ts [config.ts]
+import { defineConfig } from 'vite'
+import zipPack from 'vite-plugin-zip-pack';
+export default ({ mode }) => { 
+  return defineConfig({
+     plugins: [
+      zipPack({
+        inDir: mode === 'prod' ? 'build/prod/dist' : 'build/dev/dist',
+        outDir: mode === 'prod' ? 'build/prod/' : 'build/dev/',
+      }),
+    ],
+  })
+}
+``` 
+
+``` json [package.json]
+{
+  // ...
+   "scripts": {
+    "dev": "vite --mode dev",
+    "dev-prod": "vite --mode prod",
+  }
+  // ...
+}
+```
 
 ### [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog)
 使用标准commit生成changelog标准化

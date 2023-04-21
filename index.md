@@ -20,7 +20,7 @@ features:
     icon: { src: 'icon/js.svg' }
     link: /docs/js/built-in-objects/built-in-objects.md
   - title: CSS
-    details: CSS 是最难的语言！常学常新
+    details: CSS 是永远学不会的语言！常学常新
     icon: { src: 'icon/css.svg' }
     link: /docs/css/
   - title: React
