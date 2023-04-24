@@ -8,7 +8,10 @@ export default defineConfig({
   markdown: {
     lineNumbers: true
   },
-
+  // 解决图片403防盗链问题
+  head: [
+    ['meta', { name: 'referrer', content: 'no-referrer' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/favicon.ico',
@@ -26,7 +29,12 @@ export default defineConfig({
               { text: '实用函数', link: '/docs/js/practical-function/practical-function.md' },
             ]
           },
-          { text: 'CSS', link: '/docs/css/index.md' },
+          {
+            text: 'CSS', link: '/docs/css/index.md', items: [
+              { text: '实际应用', link: '/docs/css/use/use.md' },
+              { text: 'CSS工具', link: '/docs/css/tools/tools.md' },
+            ]
+          },
           {
             text: 'React', link: '/docs/react/index.md', items: [
               { text: 'Hooks', link: '/docs/react/hooks/hooks.md' },

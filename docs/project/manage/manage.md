@@ -92,3 +92,16 @@ server: {
     outDir: 'build/dist',
   }
   ```
+- build.rollupOptions
+  自定义底层的 Rollup 打包配置。这与从 Rollup 配置文件导出的选项相同，并将与 Vite 的内部 Rollup 选项合并。查看 [Rollup](https://rollupjs.org/configuration-options/) 选项文档获取更多细节。
+  ```ts [vite.config.ts]
+  build:{
+   rollupOptions: {
+      output: {
+        manualChunks: {
+          echarts: ['echarts'],
+        },
+      },
+    },
+  }
+  ```
