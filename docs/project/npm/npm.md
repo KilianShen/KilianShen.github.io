@@ -20,6 +20,12 @@ Vue 中 <keep-alive /> 功能在 React 中的实现。
 ### [react-error-boundary](https://www.npmjs.com/package/react-error-boundary)
 可复用的React错误边界组件。支持所有Reaction渲染器(包括Reaction DOM和Reaction Native),避免项目中的错误导致白屏。
 
+### [react-markdown](https://www.npmjs.com/package/react-markdown)
+渲染markdown文件
+
+### [@codesandbox/sandpack-react](https://sandpack.codesandbox.io/)
+提供在浏览器中运行的可编辑sandboxes的强大功能的react组件
+
 ## 数据处理
 
 ### [@reduxjs/toolkit](https://redux-toolkit.js.org/)
@@ -98,6 +104,9 @@ export default ({ mode }) => {
 
 ### [rollup-plugin-visualizer](https://www.npmjs.com/package/rollup-plugin-visualizer)
 可视化并分析打包文件，以查看哪些模块占用多少空间，便于优化项目打包。
+
+### [depcheck](https://www.npmjs.com/package/depcheck)
+Depcheck 是一个工具，用于分析项目中的依赖项以查看：如何使用每个依赖项，哪些依赖项无用，以及 package.json 中缺少哪些依赖项。
 
 
 
